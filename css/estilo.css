@@ -4,8 +4,9 @@
 .barnav{
   min-height: 10%;
   background-color: #072D5E;
+  border: none;
 }
-.container{
+.container-fluid{
   margin-top: 64px;
 }
 .jumbotron{
@@ -32,6 +33,17 @@
 @@media(max-width:770px){
   .right-column{
     display: none;
+  }
+  .movies-row {
+    min-height: 250px;
+  }
+
+  .movies-column {
+    min-height: 230px;
+  }
+
+  .jumbotron {
+    min-height: 350px;
   }
 }
 .left-column{
