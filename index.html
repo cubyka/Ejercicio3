@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Ejercicio bootstrap</title>
     <!-- Ligas bootstrap -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -20,45 +16,126 @@
   </head>
   <body class="cinema-body">
       <header>
-        <nav class="barnav navbar-fixed-top"></nav>
+        <nav class="barnav navbar-fixed-top">
+          <img class="logo-img" src="img/logo.png" alt="logo">
+        </nav>
       </header>
     <section class="container-fluid">
       <div class="row">
-        <div class="jumbotron"></div>
-        <div class="titulo-cartelera"></div>
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-lg-8 col-md-4 col-sm-4 col-xs-4 text-center">
+              <h2 class="text-uppercase welcome-title">Bienvenidos a</h2>
+              <img class="jumbotron-img" src="img/logo.png" alt="logo">
+              <div class="jumbotron-text">Síguenos en nuestras <abbr title="Facebook, Twitter, Instagram">redes sociales</abbr> para obtener información sobre los últimos estrenos del cine.</div>
+              <div class="redes-sociales">
+                <img class="img-rounded img-social" src="img/fb.png" alt="logo Facebook">
+                <img class="img-rounded img-social" src="img/tt.png" alt="logo Twitter">
+                <img class="img-rounded img-social" src="img/ig.png" alt="Logo Instagram">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="titulo-cartelera">
+          <header class="text-capitalize text-center titulo-text">Películas en Cartelera</header>
+        </div>
       </div>
       <div class="row movies-row">
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center"></div>
-        <div class="col-lg-2 col-md-2 movies-column text-center right-column"></div>
-        <div class="col-lg-2 col-md-2 movies-column text-center right-column"></div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_1.jpg" alt=""></div>
+          <div class="row movie-title">Skull Horror 3D</div>
+          <div class="row movie-title">Sala 2</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_2.jpg" alt=""></div>
+          <div class="row movie-title">The Car</div>
+          <div class="row movie-title">Sala 3</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_3.jpg" alt=""></div>
+          <div class="row movie-title">A wizard Story</div>
+          <div class="row movie-title">Sala 4</div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 movies-column text-center">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_4.jpg" alt=""></div>
+          <div class="row movie-title">The Galaxy</div>
+          <div class="row movie-title">Sala 5</div>
+        </div>
+        <div class="col-lg-2 col-md-2 movies-column text-center right-column">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_5.jpg" alt=""></div>
+          <div class="row movie-title">Darkness Halloween</div>
+          <div class="row movie-title">Sala 1</div>
+        </div>
+        <div class="col-lg-2 col-md-2 movies-column text-center right-column">
+          <div class="row movie-title"><img class="img-movies" src="img/movie_6.jpg" alt=""></div>
+          <div class="row movie-title">The Camera</div>
+          <div class="row movie-title">Sala 8</div>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 titulo-cartelera"></div>
-        <div class="col-lg-4 col-md-4 right-column titulo-cartelera"></div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 titulo-cartelera">
+          <header class="text-capitalize text-center titulo-text">Próximos Estrenos</header>
+        </div>
+        <div class="col-lg-4 col-md-4 right-column titulo-cartelera">
+          <header class="text-capitalize text-center titulo-text">Mejor Calificada</header>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-column movies-row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 left-column">
           <div class="row movies-row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+              <div class="row movie-title"><img class="img-movies" src="img/movie_7.jpg" alt=""></div>
+              <div class="row movie-title">Retro Movies</div>
+              <div class="row movie-title">Nov 2018</div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+              <div class="row movie-title"><img class="img-movies" src="img/movie_8.jpg" alt=""></div>
+              <div class="row movie-title">Horror night</div>
+              <div class="row movie-title">2019</div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center movies-column">
+              <div class="row movie-title"><img class="img-movies" src="img/movie_9.jpg" alt=""></div>
+              <div class="row movie-title">Pop Corn</div>
+              <div class="row movie-title">2019</div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 movies-row right-column ">
+        <div class="col-lg-4 col-md-4 right-column ">
           <div class="row movies-row">
-            <div class="col-lg-12 col-md-12 movies-column text-center"></div>
+            <div class="col-lg-12 col-md-12 movies-column text-center">
+              <div class="row movie-title"><img class="img-movies" src="img/movie_9.jpg" alt=""></div>
+              <div class="row movie-title">Pop Corn</div>
+              <div class="row movie-title">Calificación: 10/10</div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 titulo-cartelera left-column right-column"></div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-cartelera"></div>
+        <div class="col-lg-6 col-md-6 titulo-cartelera left-column right-column">
+          <header class="titulo-text text-capitalize text-center">Servicios</header>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 titulo-cartelera">
+          <header class="titulo-text text-capitalize text-center">Regístrate</header>
+        </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-6 left-column right-column movies-row"></div>
+        <div class="col-lg-6 col-md-6 left-column right-column movies-row">
+          <p class="services-text">En nuestro cine te ofrecemos los siguientes servicios para brindarte la mejor diversión y que disfrutes al máximo:</p>
+          <dl class="dl-horizontal">
+            <dt class="services-text">Dulcería:</dt>
+            <dd class="services-text">Los mejores dulces y botanas para acompañar tu película</dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt class="services-text">Servicio 1:</dt>
+            <dd class="services-text">Descripción del servicio</dd>
+          </dl>
+          <dl class="dl-horizontal">
+            <dt class="services-text">Servicio 1:</dt>
+            <dd class="services-text">Descripción del servicio</dd>
+          </dl>
+          <h2 class="text-center text-uppercase welcome-title">¡Te esperamos!</h2>
+        </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 movies-row"></div>
       </div>
     </section>
